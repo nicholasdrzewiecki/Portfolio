@@ -13,10 +13,42 @@
   &-list {
     display: flex;
     flex-direction: row;
+    @media (max-width: $break-sm) {
+      display: none;
+    }
   }
 
   &-list-item:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &-dropdown {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    background: lighten($color-white, 10%);
+    border-radius: 0.25rem;
+    color: $color-black;
+    padding: 1rem;
+    width: 220px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    z-index: 1;
+  }
+
+  &-dropdown-item {
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .show {
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 

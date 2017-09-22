@@ -6,3 +6,12 @@ nav.nav
       a.nav-list-link(href='/about') About
     li.nav-list-item
       a.nav-list-link(href='/work') Work
+  .menu(@click='active = !active', :class='{ active: active }')
+    .bar
+    ul.nav-dropdown(:class='{ show: active }')
+      li.nav-dropdown-item
+        a.nav-dropdown-link(href='/') Home
+      li.nav-dropdown-item
+        a.nav-dropdown-link(href='/about') About
+      li.nav-dropdown-item
+        a.nav-dropdown-link(href='/work') Work
