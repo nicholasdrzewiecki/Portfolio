@@ -65,12 +65,12 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .header-title, .header-desc {
+  .header-title, .header-description {
     text-align: center;
     margin-bottom: 2rem; }
   .header-title {
     font: 700 4rem "Playfair Display", serif; }
-  .header-desc {
+  .header-description {
     color: #a5a5a5; }
 
 .main {
@@ -108,7 +108,7 @@ p {
     margin-bottom: 1rem; }
   .card-title {
     font: 700 1.5rem "Lato", sans-serif; }
-  .card-desc {
+  .card-description {
     color: #a5a5a5;
     font: 400 1rem "Playfair Display", serif; }
   .card-anchor {

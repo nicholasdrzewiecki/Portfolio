@@ -25,7 +25,7 @@
   padding: 0 2rem;
   @include flex(column, center, center);
 
-  &-title, &-desc {
+  &-title, &-description {
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -34,7 +34,7 @@
     font: 700 4rem $font-serif;
   }
 
-  &-desc {
+  &-description {
     color: lighten($color-black, 30%);
   }
 }
