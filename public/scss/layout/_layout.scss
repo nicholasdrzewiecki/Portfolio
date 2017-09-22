@@ -1,0 +1,55 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: minmax(5rem, auto) 30rem 1fr minmax(5rem, auto);
+  min-height: 100vh;
+}
+
+.nav {
+  grid-column: span 8;
+  padding: 0 2rem;
+  @include flex(initial, flex-end, center);
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.header {
+  grid-column: span 8;
+  padding: 0 2rem;
+  @include flex(column, center, center);
+
+  &-title {
+    font: 700 4rem $font-serif;
+    margin-bottom: 2rem;
+  }
+}
+
+.main {
+  grid-column: 2/8;
+  padding: 4rem 0;
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    @media (max-width: $break-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $break-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.footer {
+  grid-column: span 8;
+  padding: 0 2rem;
+}

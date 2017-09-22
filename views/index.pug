@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  header.header
+    h1.header-title Title
+    a.button.button-error.button-round(href="#") Demo
+
+  main.main
+    .main-cards
+      - var cards = [{title: "Chat", description: "Lorem ipsum dolor sit amet"}, {title: "Chat", description: "Lorem ipsum dolor sit amet"}, {title: "Chat", description: "Lorem ipsum dolor sit amet"}]
+      each card in cards
+        .card
+          svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 480 320')
+            rect(width='480', height='320', style='fill:#cf6c63')
+          .card-content
+            .card-title=card.title
+            .card-description=card.description
+            a.card-anchor(href="#") Learn more

@@ -1,0 +1,12 @@
+.button {
+  @extend %button;
+
+  &-round {
+    border-radius: 2rem;
+  }
+
+  &-error {
+    background: $color-secondary;
+    color: $color-white;
+  }
+}
