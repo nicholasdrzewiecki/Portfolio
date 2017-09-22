@@ -26,6 +26,7 @@
   @include flex(column, center, center);
 
   &-title, &-desc {
+    text-align: center;
     margin-bottom: 2rem;
   }
 

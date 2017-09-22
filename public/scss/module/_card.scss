@@ -8,7 +8,6 @@
 
   &-description,
   &-title {
-    text-align: center;
     margin-bottom: 1rem;
   }
 
@@ -16,7 +15,7 @@
     font: 700 1.5rem $font-sans-serif;
   }
 
-  &-description {
+  &-desc {
     color: lighten($color-black, 30%);
     font: 400 1rem $font-serif;
   }
