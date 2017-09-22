@@ -22,6 +22,9 @@ a {
   font-weight: 700;
   text-decoration: none; }
 
+p {
+  line-height: 2; }
+
 ul {
   list-style: none;
   margin: 0;
@@ -62,9 +65,12 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .header-title {
-    font: 700 4rem "Playfair Display", serif;
+  .header-title, .header-desc {
     margin-bottom: 2rem; }
+  .header-title {
+    font: 700 4rem "Playfair Display", serif; }
+  .header-desc {
+    color: #a5a5a5; }
 
 .main {
   grid-column: 2/8;
@@ -98,11 +104,12 @@ p {
   .card-content {
     padding: 2rem; }
   .card-description, .card-title {
+    text-align: center;
     margin-bottom: 1rem; }
   .card-title {
     font: 700 1.5rem "Lato", sans-serif; }
   .card-description {
-    color: #8b8b8b;
+    color: #a5a5a5;
     font: 400 1rem "Playfair Display", serif; }
   .card-anchor {
     position: relative;

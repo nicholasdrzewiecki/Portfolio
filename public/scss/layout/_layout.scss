@@ -25,9 +25,16 @@
   padding: 0 2rem;
   @include flex(column, center, center);
 
+  &-title, &-desc {
+    margin-bottom: 2rem;
+  }
+
   &-title {
     font: 700 4rem $font-serif;
-    margin-bottom: 2rem;
+  }
+
+  &-desc {
+    color: lighten($color-black, 30%);
   }
 }
 
