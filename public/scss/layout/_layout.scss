@@ -27,15 +27,16 @@
 
   &-title, &-description {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   &-title {
-    font: 700 4rem $font-serif;
+    font: 700 4rem $font-sans-serif;
   }
 
   &-description {
     color: lighten($color-black, 30%);
+    font: 400 1rem $font-serif;
   }
 }
 
