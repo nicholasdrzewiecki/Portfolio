@@ -77,6 +77,10 @@ p {
 .main {
   grid-column: 2/8;
   padding: 4rem 0; }
+  @media (max-width: 60rem) {
+    .main {
+      grid-column: span 8;
+      padding: 4rem 2rem; } }
   .main-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
