@@ -59,13 +59,16 @@
   padding: 0 2rem;
   @include flex(column, center, center);
 
-  &-title, &-description {
+  &-description,
+  &-title {
     text-align: center;
     margin-bottom: 2rem;
   }
 
   &-title {
-    font: 700 4rem/100% $font-serif;
+    font: 700 4rem/100% $font-sans-serif;
+    letter-spacing: 0.25rem;
+    text-transform: lowercase;
   }
 
   &-description {
@@ -111,5 +114,6 @@
 
 .footer {
   grid-column: span 8;
+  background: $color-primary;
   padding: 0 2rem;
 }
