@@ -8,4 +8,11 @@ router.get('/', function(request, response, next) {
   });
 });
 
+router.get('/about', function(request, response, next) {
+  return response.render('about', {
+    title: 'About',
+    header: 'About'
+  });
+});
+
 module.exports = router;
