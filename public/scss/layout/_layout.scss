@@ -7,14 +7,22 @@
 
 .nav {
   grid-column: span 8;
+  background: $color-primary;
   padding: 0 2rem;
   @include flex(initial, flex-end, center);
 
   &-list {
     display: flex;
-    flex-direction: row;
     @media (max-width: $break-sm) {
       display: none;
+    }
+  }
+
+  &-list-link {
+    color: $color-white;
+
+    &:hover {
+      color: $color-secondary;
     }
   }
 
@@ -103,12 +111,12 @@
   margin-bottom: 2rem;
 
   &-title {
-    font: 700 2rem/1 $font-sans-serif, sans-serif;
+    font: 700 2rem/1 $font-serif, sans-serif;
     margin-bottom: 1rem;
   }
 
   &-description {
-    font: 400 1rem/2.5 $font-serif, serif;
+    font: 400 1.25rem/2.5 $font-serif, serif;
   }
 }
 
@@ -116,4 +124,30 @@
   grid-column: span 8;
   background: $color-primary;
   padding: 0 2rem;
+  @include flex(initial, center, center);
+
+  &-list {
+    display: flex;
+    height: 2rem;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &-list-link {
+    display: block;
+    height: 2rem;
+  }
+
+  &-list-icon {
+    fill: $color-secondary;
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-0.125rem);
+    }
+  }
 }
